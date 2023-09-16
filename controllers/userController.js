@@ -80,7 +80,7 @@ const updateUserProfile = asyncHandler(async(req,res)  => {
       user.name = req.body.name || user.name;
       user.email = req.body.email || user.email;
   
-      if (req.body.password) {s
+      if (req.body.password) {
         user.password = req.body.password;
       }
   
@@ -97,7 +97,7 @@ const updateUserProfile = asyncHandler(async(req,res)  => {
     }
   });
 
-
+  
 module.exports = {
     authUser,
     registerUser,
